@@ -82,6 +82,9 @@ button {
   outline: none;
 }
 
+.checkbox-wrapper-43{
+  padding-right: 2.5px;
+}
 .checkbox-wrapper-43 input[type="checkbox"] {
     display: none;
     visibility: hidden;
@@ -135,10 +138,10 @@ button {
     opacity: 1;
   }
   .checkbox-wrapper-43 .check:hover svg {
-    stroke: #a011f4;
+    stroke: #9236ee;
   }
   .checkbox-wrapper-43 input[type="checkbox"]:checked + .check svg {
-    stroke: #a011f4;
+    stroke: #9236ee;
   }
   .checkbox-wrapper-43 input[type="checkbox"]:checked + .check svg path {
     stroke-dashoffset: 60;
