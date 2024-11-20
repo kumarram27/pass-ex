@@ -25,18 +25,18 @@ const symbols = "!@#$%^&*()_+";
 
 function updateLength() {
   length_output.textContent = length_input.value;
-  updateProgress(); // Call the function to update the progress bar
+  updateProgress();
 }
 
 function updateProgress() {
-  // Calculate the width of the progress bar
+  
   const width =
     ((length_input.value - length_input.min) /
       (length_input.max - length_input.min)) *
     100;
-  // Set the width of the progress bar dynamically
+  
   length_input.style.background = `linear-gradient(to right, #ad25fc ${width}%, #ddd ${width}%)`;
-  generatePassword(); // Call the function to generate the password
+  generatePassword();
 }
 
 function generatePassword() {
@@ -57,8 +57,11 @@ function generatePassword() {
 
 async function copyPassword() {
   await navigator.clipboard.writeText(password_input.value);
-  alert("Password copied to clipboard");
+  generate_button.textContent = "Copied!";
+  setTimeout(() => {
+    generate_button.textContent = "Generate";
+  }, 900);
 }
 
-// Call the updateLength function initially to set the initial value
+
 updateLength();

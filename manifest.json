@@ -9,6 +9,5 @@
   },
   "icons": {
     "128": "0.png"
-  },
-  "permissions": ["storage", "activeTab"]
+  }
 }
